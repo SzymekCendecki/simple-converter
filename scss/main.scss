@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	background-color: lightgray;
+}
+
+
+header{
+	text-align: center;
+	height: 10vh;
+}
+
+.btnList{
+  width: 20vh;
+  height: 80vh;
+  display: flex;
+  flex-wrap:	wrap;
+}
+
+.btn{
+  width: 12vh;
+  height: 5.5vh;
+}
+
+.main{
+  width: 80vh;
+	height: 80vh;
+}
+
+footer{
+	text-align: center;
+	height: 10vh;
+}
