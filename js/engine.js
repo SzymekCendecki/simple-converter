@@ -80,74 +80,49 @@ module.exports = __webpack_require__(1);
 document.addEventListener("DOMContentLoaded", function () {
 	console.log("NIEWIERNE PSY RULEZ!!!!");
 
+	//zmienna o wartości jednego procenta dla szerokości 1366px
+	var onePercent = 13.66;
+
+	//utworzenie nowego elementu
+	function createNewElement(name, element, nameId, textElement, whereAppend) {
+		name = document.createElement(element);
+		name.id = nameId;
+		name.innerText = textElement;
+		whereAppend.append(name);
+	}
+
+	//utworzenie nowego inputa
+	function createNewInput(name, nameId, type, whereAppend) {
+		name = document.createElement("input");
+		name.id = nameId;
+		name.type = type;
+		whereAppend.append(name);
+	}
+
 	//obsługa zdarzeń dla przycisku dla rozdzielczości 1366x768 pikseli
 
 	$("#fifth").on("click", function () {
 
-		var title = document.createElement("p");
-		title.id = "title";
-		title.innerText = "Przeliczanie szerokości i wysokości z pikseli na procenty, dla rozdzielczości: 1366x768";
-		$(".main").append(title);
-
-		var descriptionWidthTitlePixels = document.createElement("p");
-		descriptionWidthTitlePixels.id = "descriptionWidthTitlePixels";
-		descriptionWidthTitlePixels.innerText = "podaj liczbę (w px)";
-		$(".main").append(descriptionWidthTitlePixels);
-
-		var widthInpuntPixels = document.createElement("input");
-		widthInpuntPixels.id = "widthInpuntPixels";
-		widthInpuntPixels.type = "number";
-		$(".main").append(widthInpuntPixels);
-
-		var btnPixels1366 = document.createElement("button");
-		btnPixels1366.id = "btnPixels1366";
-		btnPixels1366.innerText = "oblicz";
-		$(".main").append(btnPixels1366);
-
-		var widthPercents = document.createElement("p");
-		widthPercents.id = "widthPercents";
-		widthPercents.innerText = "wynik to: ";
-		$(".main").append(widthPercents);
-
-		var scorePercents = document.createElement("div");
-		scorePercents.id = "scorePercents";
-		scorePercents.innerText = "";
-		$(".main").append(scorePercents);
+		createNewElement("newParagraphTitle", "p", "title1366x768", "Przeliczanie szerokości i wysokości z pikseli na procenty, dla rozdzielczości: 1366x768", $(".main"));
+		createNewElement("widthTitlePixels", "p", "widthTitilePixels", "podaj liczbę (w px)", $(".main"));
+		createNewInput("widthInpuntPixels", "widthInpuntPixels", "number", $(".main"));
+		createNewElement("btnPixels1366", "button", "btnPixels1366", "oblicz", $(".main"));
+		createNewElement("widthPercents", "p", "widthPercents", "wynik to: ", $(".main"));
+		createNewElement("scorePercents", "div", "scorePercents", "", $(".main"));
 
 		$("#btnPixels1366").on("click", function () {
 			var widthPixels = $("#widthInpuntPixels").val();
-			var onePercent = 13.66;
 			$("#scorePercents").text(widthPixels / onePercent + "%");
 		});
 
-		var descriptionWidthTitlePercents = document.createElement("p");
-		descriptionWidthTitlePercents.id = "descriptionWidthTitlePercents";
-		descriptionWidthTitlePercents.innerText = "podaj liczbę (w %)";
-		$(".main").append(descriptionWidthTitlePercents);
-
-		var widthInputPercents = document.createElement("input");
-		widthInputPercents.id = "widthInputPercents";
-		widthInputPercents.type = "number";
-		$(".main").append(widthInputPercents);
-
-		var btnPercents1366 = document.createElement("button");
-		btnPercents1366.id = "btnPercents1366";
-		btnPercents1366.innerText = "oblicz";
-		$(".main").append(btnPercents1366);
-
-		var widthPixels = document.createElement("p");
-		widthPixels.id = "widthPixels";
-		widthPixels.innerText = "wynik to: ";
-		$(".main").append(widthPixels);
-
-		var scorePixels = document.createElement("div");
-		scorePixels.id = "scorePixels";
-		scorePixels.innerText = "";
-		$(".main").append(scorePixels);
+		createNewElement("descriptionWidthTitlePercents", "p", "descriptionWidthTitlePercents", "podaj liczbę (w %)", $(".main"));
+		createNewInput("widthInputPercents", "widthInputPercents", "number", $(".main"));
+		createNewElement("btnPercents1366", "button", "btnPercents1366", "oblicz", $(".main"));
+		createNewElement("widthPixels", "p", "widthPixels", "wynik to: ", $(".main"));
+		createNewElement("scorePixels", "div", "scorePixels", "", $(".main"));
 
 		$("#btnPercents1366").on("click", function () {
 			var widthPercents = $("#widthInputPercents").val();
-			var onePercent = 13.66;
 			$("#scorePixels").text(widthPercents * onePercent + "px");
 		});
 	});
