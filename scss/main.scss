@@ -9,7 +9,6 @@ html, body{
 	background-color: lightgray;
 }
 
-
 header{
 	text-align: center;
 	height: 10vh;
@@ -19,7 +18,8 @@ header{
   width: 20vh;
   height: 80vh;
   display: flex;
-  flex-wrap:	wrap;
+  flex-wrap: wrap;
+  float: left;
 }
 
 .btn{
@@ -28,11 +28,21 @@ header{
 }
 
 .main{
-  width: 80vh;
 	height: 80vh;
+	padding-left: 50px;
 }
 
 footer{
 	text-align: center;
-	height: 10vh;
+	height: 7vh;
+}
+
+
+#newParagraphTitle{
+	width: 65%;
+}
+
+.result{
+	width: 150px;
+	float: left;
 }

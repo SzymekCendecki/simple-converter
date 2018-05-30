@@ -1,0 +1,15 @@
+﻿0.0.1
+Rozpoczęcie pracy nad przelicznikiem.
+Możliwość zamiany szerokości 1366px na procenty i odwrotnie
+
+0.0.2
+Dodanie przycisków z rozdzielczościami.
+
+0.0.3
+Reorganizacja kodu przelicznika.
+
+0.0.4
+Optymalizacja kodu.
+
+0.0.5
+Dodane przelicznie dla 800px, drobna poprawka wyświetlania wyników
