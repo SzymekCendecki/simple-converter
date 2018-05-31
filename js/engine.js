@@ -80,76 +80,57 @@ module.exports = __webpack_require__(1);
 document.addEventListener("DOMContentLoaded", function () {
 	console.log("NIEWIERNE PSY RULEZ!!!!");
 
-	//zmienna o wartości jednego procenta dla szerokości 1366px
+	$("input").hide();
+	$(".main button").hide();
+	$("#scoreTitle").hide();
+
+	function showHidden() {
+		$("input").show();
+		$(".main button").show();
+		$("#scoreTitle").show();
+	}
+
+	//zmienna o wartości jednego procenta dla szerokości 800, 1366 pikseli
 	var onePercent1366 = 13.66;
 	var onePercent800 = 8;
 
-	//utworzenie nowego elementu
-	function createNewElement(name, element, nameId, textElement, whereAppend) {
-		name = document.createElement(element);
-		name.id = nameId;
-		name.innerText = textElement;
-		whereAppend.append(name);
-	}
-
-	//utworzenie nowego inputa
-	function createNewInput(name, nameId, type, whereAppend) {
-		name = document.createElement("input");
-		name.id = nameId;
-		name.type = type;
-		whereAppend.append(name);
-	}
-
+	//obsługa zdarzeń dla przycisku 800x600 pikseli
 	$("#first").on("click", function () {
-		$(".main").empty();
-		createNewElement("newParagraphTitle", "p", "title800x600", "Przeliczanie szerokości i wysokości z pikseli na procenty, dla rozdzielczości: 800x600", $(".main"));
-		createNewElement("widthTitlePixels", "p", "widthTitilePixels", "podaj liczbę (w px)", $(".main"));
-		createNewInput("widthInpuntPixels", "widthInpuntPixels", "number", $(".main"));
-		createNewElement("btnPixels800", "button", "btnPixels800", "oblicz", $(".main"));
-		createNewElement("widthPercents", "div", "widthPercents", "wynik to: ", $(".main"));
-		createNewElement("scorePercents", "div", "scorePercents", "", $(".main"));
+		showHidden();
 
-		$("#btnPixels800").on("click", function () {
-			var widthPixels = $("#widthInpuntPixels").val();
-			$("#scorePercents").text(widthPixels / onePercent800 + "%");
+		$("#pixelsToPercents").text("Konwersja szerokości z pikseli na procenty dla szerokości");
+		$("#widthValue").text("800px");
+		$("#subTitlePixels").text("Podaj liczbę (w pikselach)");
+
+		$("#calculatePixelsWidth").on("click", function () {
+			var widthPixels = $("#numberPixelsValue").val();
+			$("#scoreWidth").text(widthPixels / onePercent800 + "%");
 		});
 
-		createNewElement("descriptionWidthTitlePercents", "p", "descriptionWidthTitlePercents", "podaj liczbę (w %)", $(".main"));
-		createNewInput("widthInputPercents", "widthInputPercents", "number", $(".main"));
-		createNewElement("btnPercents800", "button", "btnPercents800", "oblicz", $(".main"));
-		createNewElement("widthPixels", "div", "widthPixels", "wynik to: ", $(".main"));
-		createNewElement("scorePixels", "div", "scorePixels", "", $(".main"));
-
-		$("#btnPercents800").on("click", function () {
-			var widthPercents = $("#widthInputPercents").val();
-			$("#scorePixels").text(widthPercents * onePercent800 + "px");
+		$("#subTitlePercents").text("Podaj liczbę (w procentach)");
+		$("#calculatePercentsWidth").on("click", function () {
+			var widthPercents = $("#numberPercentsValue").val();
+			$("#scoreWidth").text(widthPercents * onePercent800 + "px");
 		});
 	});
 
 	//obsługa zdarzeń dla przycisku dla rozdzielczości 1366x768 pikseli
 	$("#fifth").on("click", function () {
-		$(".main").empty();
-		createNewElement("newParagraphTitle", "p", "title1366x768", "Przeliczanie szerokości i wysokości z pikseli na procenty, dla rozdzielczości: 1366x768", $(".main"));
-		createNewElement("widthTitlePixels", "p", "widthTitilePixels", "podaj liczbę (w px)", $(".main"));
-		createNewInput("widthInpuntPixels", "widthInpuntPixels", "number", $(".main"));
-		createNewElement("btnPixels1366", "button", "btnPixels1366", "oblicz", $(".main"));
-		createNewElement("widthPercents", "div", "widthPercents", "wynik to: ", $(".main"));
-		createNewElement("scorePercents", "div", "scorePercents", "", $(".main"));
+		showHidden();
 
-		$("#btnPixels1366").on("click", function () {
-			var widthPixels = $("#widthInpuntPixels").val();
-			$("#scorePercents").text(widthPixels / onePercent1366 + "%");
+		$("#pixelsToPercents").text("Konwersja szerokości z pikseli na procenty dla szerokości");
+		$("#widthValue").text("1366px");
+		$("#subTitlePixels").text("Podaj liczbę (w pikselach)");
+
+		$("#calculatePixelsWidth").on("click", function () {
+			var widthPixels = $("#numberPixelsValue").val();
+			$("#scoreWidth").text(widthPixels / onePercent1366 + "%");
 		});
 
-		createNewElement("descriptionWidthTitlePercents", "p", "descriptionWidthTitlePercents", "podaj liczbę (w %)", $(".main"));
-		createNewInput("widthInputPercents", "widthInputPercents", "number", $(".main"));
-		createNewElement("btnPercents1366", "button", "btnPercents1366", "oblicz", $(".main"));
-		createNewElement("widthPixels", "div", "widthPixels", "wynik to: ", $(".main"));
-		createNewElement("scorePixels", "div", "scorePixels", "", $(".main"));
-
-		$("#btnPercents1366").on("click", function () {
-			var widthPercents = $("#widthInputPercents").val();
-			$("#scorePixels").text(widthPercents * onePercent1366 + "px");
+		$("#subTitlePercents").text("Podaj liczbę (w procentach)");
+		$("#calculatePercentsWidth").on("click", function () {
+			var widthPercents = $("#numberPercentsValue").val();
+			$("#scoreWidth").text(widthPercents * onePercent1366 + "px");
 		});
 	});
 });

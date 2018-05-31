@@ -12,4 +12,7 @@ Reorganizacja kodu przelicznika.
 Optymalizacja kodu.
 
 0.0.5
-Dodane przelicznie dla 800px, drobna poprawka wyświetlania wyników
+Dodane przelicznie dla 800px, drobna poprawka wyświetlania wyników.
+
+0.0.6
+Ponowna reorganizacja oraz delikatna optymalizacja kodu. 
