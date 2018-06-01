@@ -15,4 +15,7 @@ Optymalizacja kodu.
 Dodane przelicznie dla 800px, drobna poprawka wyświetlania wyników.
 
 0.0.6
-Ponowna reorganizacja oraz delikatna optymalizacja kodu. 
+Ponowna reorganizacja oraz delikatna optymalizacja kodu.
+
+0.0.7
+Dodane została konwersja dla pozostałych szerokości

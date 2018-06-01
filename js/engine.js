@@ -91,8 +91,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	//zmienna o wartości jednego procenta dla szerokości 800, 1366 pikseli
-	var onePercent1366 = 13.66;
 	var onePercent800 = 8;
+	var onePercent1024 = 10.24;
+	var onePercent1280 = 12.80;
+	var onePercent1360 = 13.60;
+	var onePercent1366 = 13.66;
 
 	//obsługa zdarzeń dla przycisku 800x600 pikseli
 	$("#first").on("click", function () {
@@ -111,6 +114,66 @@ document.addEventListener("DOMContentLoaded", function () {
 		$("#calculatePercentsWidth").on("click", function () {
 			var widthPercents = $("#numberPercentsValue").val();
 			$("#scoreWidth").text(widthPercents * onePercent800 + "px");
+		});
+	});
+
+	//obsługa zdarzeń dla przycisku 1024x768 pikseli
+	$("#second").on("click", function () {
+		showHidden();
+
+		$("#pixelsToPercents").text("Konwersja szerokości z pikseli na procenty dla szerokości");
+		$("#widthValue").text("1024px");
+		$("#subTitlePixels").text("Podaj liczbę (w pikselach)");
+
+		$("#calculatePixelsWidth").on("click", function () {
+			var widthPixels = $("#numberPixelsValue").val();
+			$("#scoreWidth").text(widthPixels / onePercent1024 + "%");
+		});
+
+		$("#subTitlePercents").text("Podaj liczbę (w procentach)");
+		$("#calculatePercentsWidth").on("click", function () {
+			var widthPercents = $("#numberPercentsValue").val();
+			$("#scoreWidth").text(widthPercents * onePercent1024 + "px");
+		});
+	});
+
+	//obsługa zdarzeń dla przycisku 1280x768 pikseli
+	$("#third").on("click", function () {
+		showHidden();
+
+		$("#pixelsToPercents").text("Konwersja szerokości z pikseli na procenty dla szerokości");
+		$("#widthValue").text("1280px");
+		$("#subTitlePixels").text("Podaj liczbę (w pikselach)");
+
+		$("#calculatePixelsWidth").on("click", function () {
+			var widthPixels = $("#numberPixelsValue").val();
+			$("#scoreWidth").text(widthPixels / onePercent1280 + "%");
+		});
+
+		$("#subTitlePercents").text("Podaj liczbę (w procentach)");
+		$("#calculatePercentsWidth").on("click", function () {
+			var widthPercents = $("#numberPercentsValue").val();
+			$("#scoreWidth").text(widthPercents * onePercent1280 + "px");
+		});
+	});
+
+	//obsługa zdarzeń dla przycisku 1360x768 pikseli
+	$("#fourth").on("click", function () {
+		showHidden();
+
+		$("#pixelsToPercents").text("Konwersja szerokości z pikseli na procenty dla szerokości");
+		$("#widthValue").text("1360px");
+		$("#subTitlePixels").text("Podaj liczbę (w pikselach)");
+
+		$("#calculatePixelsWidth").on("click", function () {
+			var widthPixels = $("#numberPixelsValue").val();
+			$("#scoreWidth").text(widthPixels / onePercent1360 + "%");
+		});
+
+		$("#subTitlePercents").text("Podaj liczbę (w procentach)");
+		$("#calculatePercentsWidth").on("click", function () {
+			var widthPercents = $("#numberPercentsValue").val();
+			$("#scoreWidth").text(widthPercents * onePercent1360 + "px");
 		});
 	});
 
