@@ -83,11 +83,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	$("input").hide();
 	$(".main button").hide();
 	$("#scoreTitle").hide();
+	$("#scoreTitleHeight").hide();
 
 	function showHidden() {
 		$("input").show();
 		$(".main button").show();
 		$("#scoreTitle").show();
+		$("#scoreTitleHeight").show();
 	}
 
 	//zmienna o wartości jednego procenta dla szerokości 800, 1366 pikseli
@@ -96,6 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	var onePercent1280 = 12.80;
 	var onePercent1360 = 13.60;
 	var onePercent1366 = 13.66;
+	var onePercent600 = 6;
+	var onePercent768 = 7.68;
 
 	//obsługa zdarzeń dla przycisku 800x600 pikseli
 	$("#first").on("click", function () {
@@ -114,6 +118,21 @@ document.addEventListener("DOMContentLoaded", function () {
 		$("#calculatePercentsWidth").on("click", function () {
 			var widthPercents = $("#numberPercentsValue").val();
 			$("#scoreWidth").text(widthPercents * onePercent800 + "px");
+		});
+
+		$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
+		$("#heightValue").text("600px");
+		$("#subTitlePixelsHeight").text("Podaj liczbę (w pikselach)");
+
+		$("#calculatePixelsHeight").on("click", function () {
+			var heightPixels = $("#numberPixelsValueHeight").val();
+			$("#scoreHeight").text(heightPixels / onePercent600 + "%");
+		});
+
+		$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
+		$("#calculatePercentsHeight").on("click", function () {
+			var heightPercents = $("#numberPercentsValueHeight").val();
+			$("#scoreHeight").text(heightPercents * onePercent600 + "px");
 		});
 	});
 
@@ -135,6 +154,21 @@ document.addEventListener("DOMContentLoaded", function () {
 			var widthPercents = $("#numberPercentsValue").val();
 			$("#scoreWidth").text(widthPercents * onePercent1024 + "px");
 		});
+
+		$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
+		$("#heightValue").text("768px");
+		$("#subTitlePixelsHeight").text("Podaj liczbę (w pikselach)");
+
+		$("#calculatePixelsHeight").on("click", function () {
+			var heightPixels = $("#numberPixelsValueHeight").val();
+			$("#scoreHeight").text(heightPixels / onePercent768 + "%");
+		});
+
+		$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
+		$("#calculatePercentsHeight").on("click", function () {
+			var heightPercents = $("#numberPercentsValueHeight").val();
+			$("#scoreHeight").text(heightPercents * onePercent768 + "px");
+		});
 	});
 
 	//obsługa zdarzeń dla przycisku 1280x768 pikseli
@@ -154,6 +188,21 @@ document.addEventListener("DOMContentLoaded", function () {
 		$("#calculatePercentsWidth").on("click", function () {
 			var widthPercents = $("#numberPercentsValue").val();
 			$("#scoreWidth").text(widthPercents * onePercent1280 + "px");
+		});
+
+		$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
+		$("#heightValue").text("768px");
+		$("#subTitlePixelsHeight").text("Podaj liczbę (w pikselach)");
+
+		$("#calculatePixelsHeight").on("click", function () {
+			var heightPixels = $("#numberPixelsValueHeight").val();
+			$("#scoreHeight").text(heightPixels / onePercent768 + "%");
+		});
+
+		$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
+		$("#calculatePercentsHeight").on("click", function () {
+			var heightPercents = $("#numberPercentsValueHeight").val();
+			$("#scoreHeight").text(heightPercents * onePercent768 + "px");
 		});
 	});
 
@@ -175,6 +224,21 @@ document.addEventListener("DOMContentLoaded", function () {
 			var widthPercents = $("#numberPercentsValue").val();
 			$("#scoreWidth").text(widthPercents * onePercent1360 + "px");
 		});
+
+		$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
+		$("#heightValue").text("768px");
+		$("#subTitlePixelsHeight").text("Podaj liczbę (w pikselach)");
+
+		$("#calculatePixelsHeight").on("click", function () {
+			var heightPixels = $("#numberPixelsValueHeight").val();
+			$("#scoreHeight").text(heightPixels / onePercent768 + "%");
+		});
+
+		$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
+		$("#calculatePercentsHeight").on("click", function () {
+			var heightPercents = $("#numberPercentsValueHeight").val();
+			$("#scoreHeight").text(heightPercents * onePercent768 + "px");
+		});
 	});
 
 	//obsługa zdarzeń dla przycisku dla rozdzielczości 1366x768 pikseli
@@ -194,6 +258,21 @@ document.addEventListener("DOMContentLoaded", function () {
 		$("#calculatePercentsWidth").on("click", function () {
 			var widthPercents = $("#numberPercentsValue").val();
 			$("#scoreWidth").text(widthPercents * onePercent1366 + "px");
+		});
+
+		$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
+		$("#heightValue").text("768px");
+		$("#subTitlePixelsHeight").text("Podaj liczbę (w pikselach)");
+
+		$("#calculatePixelsHeight").on("click", function () {
+			var heightPixels = $("#numberPixelsValueHeight").val();
+			$("#scoreHeight").text(heightPixels / onePercent768 + "%");
+		});
+
+		$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
+		$("#calculatePercentsHeight").on("click", function () {
+			var heightPercents = $("#numberPercentsValueHeight").val();
+			$("#scoreHeight").text(heightPercents * onePercent768 + "px");
 		});
 	});
 });

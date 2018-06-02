@@ -4,11 +4,13 @@ console.log("NIEWIERNE PSY RULEZ!!!!");
 $("input").hide();
 $(".main button").hide();
 $("#scoreTitle").hide();
+$("#scoreTitleHeight").hide();
 
 function showHidden(){
 	$("input").show();
 	$(".main button").show();
 	$("#scoreTitle").show();
+	$("#scoreTitleHeight").show();
 }
 
 //zmienna o wartości jednego procenta dla szerokości 800, 1366 pikseli
@@ -17,6 +19,8 @@ let onePercent1024 = 10.24;
 let onePercent1280 = 12.80;
 let onePercent1360 = 13.60;
 let onePercent1366 = 13.66;
+let onePercent600 = 6;
+let onePercent768 = 7.68;
 
 //obsługa zdarzeń dla przycisku 800x600 pikseli
 $("#first").on("click", ()=>{
@@ -35,6 +39,21 @@ $("#first").on("click", ()=>{
 	$("#calculatePercentsWidth").on("click", ()=>{
 		let widthPercents = $("#numberPercentsValue").val();
 		$("#scoreWidth").text(widthPercents*onePercent800 + "px");
+	});
+
+	$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
+	$("#heightValue").text("600px");
+	$("#subTitlePixelsHeight").text("Podaj liczbę (w pikselach)");
+
+	$("#calculatePixelsHeight").on("click", () =>{
+		let heightPixels = $("#numberPixelsValueHeight").val();
+		$("#scoreHeight").text(heightPixels/onePercent600 + "%");
+	});
+
+	$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
+	$("#calculatePercentsHeight").on("click", ()=>{
+		let heightPercents = $("#numberPercentsValueHeight").val();
+		$("#scoreHeight").text(heightPercents*onePercent600 + "px");
 	});
 });
 
@@ -56,6 +75,21 @@ $("#second").on("click", ()=>{
 		let widthPercents = $("#numberPercentsValue").val();
 		$("#scoreWidth").text(widthPercents*onePercent1024 + "px");
 	});
+
+	$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
+	$("#heightValue").text("768px");
+	$("#subTitlePixelsHeight").text("Podaj liczbę (w pikselach)");
+
+	$("#calculatePixelsHeight").on("click", () =>{
+		let heightPixels = $("#numberPixelsValueHeight").val();
+		$("#scoreHeight").text(heightPixels/onePercent768 + "%");
+	});
+
+	$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
+	$("#calculatePercentsHeight").on("click", ()=>{
+		let heightPercents = $("#numberPercentsValueHeight").val();
+		$("#scoreHeight").text(heightPercents*onePercent768 + "px");
+	});
 });
 
 //obsługa zdarzeń dla przycisku 1280x768 pikseli
@@ -75,6 +109,21 @@ $("#third").on("click", ()=>{
 	$("#calculatePercentsWidth").on("click", ()=>{
 		let widthPercents = $("#numberPercentsValue").val();
 		$("#scoreWidth").text(widthPercents*onePercent1280 + "px");
+	});
+
+	$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
+	$("#heightValue").text("768px");
+	$("#subTitlePixelsHeight").text("Podaj liczbę (w pikselach)");
+
+	$("#calculatePixelsHeight").on("click", () =>{
+		let heightPixels = $("#numberPixelsValueHeight").val();
+		$("#scoreHeight").text(heightPixels/onePercent768 + "%");
+	});
+
+	$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
+	$("#calculatePercentsHeight").on("click", ()=>{
+		let heightPercents = $("#numberPercentsValueHeight").val();
+		$("#scoreHeight").text(heightPercents*onePercent768 + "px");
 	});
 });
 
@@ -96,6 +145,21 @@ $("#fourth").on("click", ()=>{
 		let widthPercents = $("#numberPercentsValue").val();
 		$("#scoreWidth").text(widthPercents*onePercent1360 + "px");
 	});
+
+	$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
+	$("#heightValue").text("768px");
+	$("#subTitlePixelsHeight").text("Podaj liczbę (w pikselach)");
+
+	$("#calculatePixelsHeight").on("click", () =>{
+		let heightPixels = $("#numberPixelsValueHeight").val();
+		$("#scoreHeight").text(heightPixels/onePercent768 + "%");
+	});
+
+	$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
+	$("#calculatePercentsHeight").on("click", ()=>{
+		let heightPercents = $("#numberPercentsValueHeight").val();
+		$("#scoreHeight").text(heightPercents*onePercent768 + "px");
+	});
 });
 
 //obsługa zdarzeń dla przycisku dla rozdzielczości 1366x768 pikseli
@@ -115,6 +179,21 @@ $("#fifth").on("click", () =>{
 	$("#calculatePercentsWidth").on("click", ()=>{
 		let widthPercents = $("#numberPercentsValue").val();
 		$("#scoreWidth").text(widthPercents*onePercent1366 + "px");
+	});
+
+	$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
+	$("#heightValue").text("768px");
+	$("#subTitlePixelsHeight").text("Podaj liczbę (w pikselach)");
+
+	$("#calculatePixelsHeight").on("click", () =>{
+		let heightPixels = $("#numberPixelsValueHeight").val();
+		$("#scoreHeight").text(heightPixels/onePercent768 + "%");
+	});
+
+	$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
+	$("#calculatePercentsHeight").on("click", ()=>{
+		let heightPercents = $("#numberPercentsValueHeight").val();
+		$("#scoreHeight").text(heightPercents*onePercent768 + "px");
 	});
 });
 });

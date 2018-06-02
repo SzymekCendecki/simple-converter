@@ -18,4 +18,7 @@ Dodane przelicznie dla 800px, drobna poprawka wyświetlania wyników.
 Ponowna reorganizacja oraz delikatna optymalizacja kodu.
 
 0.0.7
-Dodane została konwersja dla pozostałych szerokości
+Dodane została konwersja dla pozostałych szerokości.
+
+0.0.8
+Dodane zostały konwersje dla wszystkich wysokości.
