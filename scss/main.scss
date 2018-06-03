@@ -25,6 +25,11 @@ header{
 .btn{
   width: 12vh;
   height: 5.5vh;
+	background: linear-gradient(white, black);
+	color: navy;
+	font-weight: bold;
+	text-shadow: 1px 1px white;
+	font-size: 1.02em;
 }
 
 .main{
@@ -38,12 +43,12 @@ footer{
 }
 
 
-#pixelsToPercents, #widthValue{
+#pixelsToPercents, #widthValue, #pixelsToPercentsHeight, #heightValue{
 	text-align: center;
 	font-weight: bold;
 }
 
-#widthValue{
+#widthValue, #heightValue{
 	font-size: 1.5em;
 	text-shadow: 2px 1px white;
 }
