@@ -22,3 +22,13 @@ Dodane została konwersja dla pozostałych szerokości.
 
 0.0.8
 Dodane zostały konwersje dla wszystkich wysokości.
+
+0.0.9
+Zmiana graficzna przycisków z rozdzielczościami.
+
+0.1.0
+Drobna poprawka dla wyświetleń wyników konwersji - wysokość paragrafu scoreWidth ustawiona na sztywno (nie obniża dzięki temu części dla konwersji wysokości).
+
+Obniżona została część odpowiedzialna za konwersję wysokości - mała poprawa czytelności.
+
+Walidacja dla rozdzielczości 800x600 - gdy użytkownik wprowadzi liczbę ujemną, zero lub nie wprowadzi liczby wogóle, pojawi się komunikat o wprowadzeniu poprawnej wartości.
