@@ -34,4 +34,7 @@ Obniżona została część odpowiedzialna za konwersję wysokości - mała popr
 Walidacja dla rozdzielczości 800x600 - gdy użytkownik wprowadzi liczbę ujemną, zero lub nie wprowadzi liczby wogóle, pojawi się komunikat o wprowadzeniu poprawnej wartości.
 
 0.1.1
-Dodana walidacja dla rozdzielczości 1024x768 i 1280x768
+Dodana walidacja dla rozdzielczości 1024x768 i 1280x768.
+
+0.1.2
+Dodana walidacja dla rozdzielcości 1360x768 i 1366x768.
