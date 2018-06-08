@@ -40,4 +40,7 @@ Dodana walidacja dla rozdzielczości 1024x768 i 1280x768.
 Dodana walidacja dla rozdzielcości 1360x768 i 1366x768.
 
 0.1.3
-Zmiana koloru tła, usunięcie ze stopki sentencji, tytuł konvertera wystylizowany na 3D (także nazwa studia w stopce)
+Zmiana koloru tła, usunięcie ze stopki sentencji, tytuł konvertera wystylizowany na 3D (także nazwa studia w stopce).
+
+0.1.4
+Dodane do przycisków rozdzelczości hover i active - efekt wciśnięcia przycisków.

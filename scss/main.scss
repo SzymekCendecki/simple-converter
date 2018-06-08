@@ -6,7 +6,7 @@
 html, body{
 	width: 100%;
 	height: 100%;
-	background-color: lightgray;
+	background-color: beige;
 }
 
 header{
@@ -30,7 +30,22 @@ header{
 	font-weight: bold;
 	text-shadow: 1px 1px white;
 	font-size: 1.02em;
+	box-shadow: 0 9px #999;
+	border-radius: 10px;
 }
+
+.btn:hover{
+	background: linear-gradient(white, navy);
+	color: black;
+	text-shadow: darkgray;
+}
+
+.btn:active{
+	background: linear-gradient(white, green);
+	box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 
 .main{
 	height: 80vh;
@@ -59,4 +74,24 @@ footer{
 
 #pixelsToPercentsHeight{
 	margin-top: 5%;
+}
+
+.effect3dHeader{
+	color: #fff;
+		text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+	}
+
+.subTitle{
+		font-weight: bold;
+		padding-top: 0.5%;
+		text-shadow: 2px 1px white;
+		font-size: 1.1em;
+	}
+
+.effect3dFooter{
+		font-size: 2.75em;
+		margin-top: -2%;
+		text-align: center;
+		color: #0000bf;
+		text-shadow: 0px 1px 0px #aaaae9, 0px 2px 0px #8d8de2, 0px 3px 0px #7171db, 0px 4px 0px #5555d4, 0px 5px 0px #3838cd, 0px 6px 0px #1c1cc6, 0px 7px 0px #0000bf;
 }
