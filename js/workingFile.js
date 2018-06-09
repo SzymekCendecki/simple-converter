@@ -32,23 +32,13 @@ $("#first").on("click", ()=>{
 
 	$("#calculatePixelsWidth").on("click", () =>{
 		let widthPixels = $("#numberPixelsValue").val();
-
-		if(widthPixels <= 0){
-				$("#scoreWidth").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(widthPixels > 0){
 			$("#scoreWidth").text(widthPixels/onePercent800 + "%");
-		}
 	});
 
 	$("#subTitlePercents").text("Podaj liczbę (w procentach)");
 	$("#calculatePercentsWidth").on("click", ()=>{
 		let widthPercents = $("#numberPercentsValue").val();
-
-		if(widthPercents <= 0){
-				$("#scoreWidth").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(widthPercents > 0){
 			$("#scoreWidth").text(widthPercents*onePercent800 + "px");
-		}
 	});
 
 	$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
@@ -57,32 +47,15 @@ $("#first").on("click", ()=>{
 
 	$("#calculatePixelsHeight").on("click", () =>{
 		let heightPixels = $("#numberPixelsValueHeight").val();
-
-		if(heightPixels <= 0){
-				$("#scoreHeight").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(heightPixels > 0){
 			$("#scoreHeight").text(heightPixels/onePercent600 + "%");
-		}
 	});
 
 	$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
 	$("#calculatePercentsHeight").on("click", ()=>{
 		let heightPercents = $("#numberPercentsValueHeight").val();
-
-		if(heightPercents <= 0){
-				$("#scoreHeight").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(heightPercents > 0){
 			$("#scoreHeight").text(heightPercents*onePercent600 + "px");
-		}
-
 	});
 });
-
-
-
-
-
-
 
 //obsługa zdarzeń dla przycisku 1024x768 pikseli
 $("#second").on("click", ()=>{
@@ -94,24 +67,13 @@ $("#second").on("click", ()=>{
 
 	$("#calculatePixelsWidth").on("click", () =>{
 		let widthPixels = $("#numberPixelsValue").val();
-
-		if(widthPixels <= 0){
-				$("#scoreWidth").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(widthPixels > 0){
-				$("#scoreWidth").text(widthPixels/onePercent1024 + "%");
-		}
-	});
+			$("#scoreWidth").text(widthPixels/onePercent1024 + "%");
+		});
 
 	$("#subTitlePercents").text("Podaj liczbę (w procentach)");
 	$("#calculatePercentsWidth").on("click", ()=>{
 		let widthPercents = $("#numberPercentsValue").val();
-
-		if(widthPercents <= 0){
-				$("#scoreWidth").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(widthPercents > 0){
-				$("#scoreWidth").text(widthPercents*onePercent1024 + "px");
-		}
-
+			$("#scoreWidth").text(widthPercents*onePercent1024 + "px");
 	});
 
 	$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
@@ -120,29 +82,15 @@ $("#second").on("click", ()=>{
 
 	$("#calculatePixelsHeight").on("click", () =>{
 		let heightPixels = $("#numberPixelsValueHeight").val();
-
-		if(heightPixels <= 0){
-				$("#scoreHeight").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(heightPixels > 0){
-				$("#scoreHeight").text(heightPixels/onePercent768 + "%");
-		}
-	});
+			$("#scoreHeight").text(heightPixels/onePercent768 + "%");
+		});
 
 	$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
 	$("#calculatePercentsHeight").on("click", ()=>{
 		let heightPercents = $("#numberPercentsValueHeight").val();
-
-		if(heightPercents <= 0){
-				$("#scoreHeight").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(heightPercents > 0){
-		$("#scoreHeight").text(heightPercents*onePercent768 + "px");
-}
+			$("#scoreHeight").text(heightPercents*onePercent768 + "px");
 	});
 });
-
-
-
-
 
 //obsługa zdarzeń dla przycisku 1280x768 pikseli
 $("#third").on("click", ()=>{
@@ -154,24 +102,13 @@ $("#third").on("click", ()=>{
 
 	$("#calculatePixelsWidth").on("click", () =>{
 		let widthPixels = $("#numberPixelsValue").val();
-
-		if(widthPixels <= 0){
-				$("#scoreWidth").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(widthPixels > 0){
-	$("#scoreWidth").text(widthPixels/onePercent1280 + "%");
-}
+			$("#scoreWidth").text(widthPixels/onePercent1280 + "%");
 });
 
 	$("#subTitlePercents").text("Podaj liczbę (w procentach)");
 	$("#calculatePercentsWidth").on("click", ()=>{
 		let widthPercents = $("#numberPercentsValue").val();
-
-		if(widthPercents <= 0){
-				$("#scoreWidth").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(widthPercents > 0){
-				$("#scoreWidth").text(widthPercents*onePercent1280 + "px");
-}
-
+			$("#scoreWidth").text(widthPercents*onePercent1280 + "px");
 	});
 
 	$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
@@ -180,31 +117,15 @@ $("#third").on("click", ()=>{
 
 	$("#calculatePixelsHeight").on("click", () =>{
 		let heightPixels = $("#numberPixelsValueHeight").val();
-
-		if(heightPixels <= 0){
-				$("#scoreHeight").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(heightPixels > 0){
-				$("#scoreHeight").text(heightPixels/onePercent768 + "%");
-}
-
+			$("#scoreHeight").text(heightPixels/onePercent768 + "%");
 	});
 
 	$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
 	$("#calculatePercentsHeight").on("click", ()=>{
 		let heightPercents = $("#numberPercentsValueHeight").val();
-
-		if(heightPercents <= 0){
-				$("#scoreHeight").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(heightPercents > 0){
-					$("#scoreHeight").text(heightPercents*onePercent768 + "px");
-}
+			$("#scoreHeight").text(heightPercents*onePercent768 + "px");
 	});
 });
-
-
-
-
-
 
 //obsługa zdarzeń dla przycisku 1360x768 pikseli
 $("#fourth").on("click", ()=>{
@@ -216,24 +137,13 @@ $("#fourth").on("click", ()=>{
 
 	$("#calculatePixelsWidth").on("click", () =>{
 		let widthPixels = $("#numberPixelsValue").val();
-
-		if(widthPixels <= 0){
-				$("#scoreWidth").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(widthPixels > 0){
-					$("#scoreWidth").text(widthPixels/onePercent1360 + "%");
-}
-
+			$("#scoreWidth").text(widthPixels/onePercent1360 + "%");
 	});
 
 	$("#subTitlePercents").text("Podaj liczbę (w procentach)");
 	$("#calculatePercentsWidth").on("click", ()=>{
 		let widthPercents = $("#numberPercentsValue").val();
-
-		if(widthPercents <= 0){
-				$("#scoreWidth").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(widthPercents > 0){
-					$("#scoreWidth").text(widthPercents*onePercent1360 + "px");
-}
+				$("#scoreWidth").text(widthPercents*onePercent1360 + "px");
 	});
 
 	$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
@@ -242,33 +152,15 @@ $("#fourth").on("click", ()=>{
 
 	$("#calculatePixelsHeight").on("click", () =>{
 		let heightPixels = $("#numberPixelsValueHeight").val();
-
-		if(heightPixels <= 0){
-				$("#scoreHeight").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(heightPixels > 0){
 				$("#scoreHeight").text(heightPixels/onePercent768 + "%");
-}
 		});
 
 	$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
 	$("#calculatePercentsHeight").on("click", ()=>{
 		let heightPercents = $("#numberPercentsValueHeight").val();
-		if(heightPercents <= 0){
-				$("#scoreHeight").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(heightPercents > 0){
 				$("#scoreHeight").text(heightPercents*onePercent768 + "px");
-		}
 	});
 });
-
-
-
-
-
-
-
-
-
 
 //obsługa zdarzeń dla przycisku dla rozdzielczości 1366x768 pikseli
 $("#fifth").on("click", () =>{
@@ -280,24 +172,13 @@ $("#fifth").on("click", () =>{
 
 	$("#calculatePixelsWidth").on("click", () =>{
 		let widthPixels = $("#numberPixelsValue").val();
-
-		if(widthPixels <= 0){
-				$("#scoreWidth").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(widthPixels > 0){
 				$("#scoreWidth").text(widthPixels/onePercent1366 + "%");
-		}
-
 	});
 
 	$("#subTitlePercents").text("Podaj liczbę (w procentach)");
 	$("#calculatePercentsWidth").on("click", ()=>{
 		let widthPercents = $("#numberPercentsValue").val();
-
-		if(widthPercents <= 0){
-				$("#scoreWidth").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(widthPercents > 0){
-				$("#scoreWidth").text(widthPercents*onePercent1366 + "px");
-		}
+			$("#scoreWidth").text(widthPercents*onePercent1366 + "px");
 	});
 
 	$("#pixelsToPercentsHeight").text("Konwersja szerokości z pikseli na procenty dla wysokości");
@@ -306,25 +187,15 @@ $("#fifth").on("click", () =>{
 
 	$("#calculatePixelsHeight").on("click", () =>{
 		let heightPixels = $("#numberPixelsValueHeight").val();
-
-		if(heightPixels <= 0){
-				$("#scoreHeight").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(heightPixels > 0){
-				$("#scoreHeight").text(heightPixels/onePercent768 + "%");
-		}
-
+			$("#scoreHeight").text(heightPixels/onePercent768 + "%");
 	});
 
 	$("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
 	$("#calculatePercentsHeight").on("click", ()=>{
 		let heightPercents = $("#numberPercentsValueHeight").val();
-
-		if(heightPercents  <= 0){
-				$("#scoreHeight").text("liczba jest mniejsza lub równa zero. popraw");
-		}else if(heightPercents  > 0){
-				$("#scoreHeight").text(heightPercents*onePercent768 + "px");
-		}
-
+			$("#scoreHeight").text(heightPercents*onePercent768 + "px");
 	});
 });
+
+
 });

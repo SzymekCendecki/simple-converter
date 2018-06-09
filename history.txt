@@ -44,3 +44,6 @@ Zmiana koloru tła, usunięcie ze stopki sentencji, tytuł konvertera wystylizow
 
 0.1.4
 Dodane do przycisków rozdzelczości hover i active - efekt wciśnięcia przycisków.
+
+0.1.5
+Usunięcie walidacji inputów. Dodanie danych kontaktowych. Drobne poprawki graficzne.
