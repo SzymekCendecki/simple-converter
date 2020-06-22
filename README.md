@@ -1,7 +1,7 @@
 # simple-converter
 
 # getting started:
-To start working with the project, you must download it and place it in a directory called pirackiRejs.
+To start working with the project, you must download it and place it in a directory simple-converter.
 
 Then, in this directory, start the terminal and run: npm install
 
@@ -11,7 +11,7 @@ After completing operation in the terminal, run:
 Open the terminal a second time and run: 
 # node_modules / .bin / webpack
 
-Remember that starting the terminal with gulp watch and node_modules / .bin / webpack should be in the project directory. In this case, in the pirackiRejs directory.
+Remember that starting the terminal with gulp watch and node_modules / .bin / webpack should be in the project directory. In this case, in the simple-converter directory.
 
 Now just open the appropriate program to write the code and start working.
 
@@ -34,7 +34,7 @@ It's a simple conversion from pixels to percentages and vice versa, for differen
 HTML, CSS/SCSS, jQuery
 
 # rozpoczęcie pracy:
-Aby rozpocząć pracę z projektem należy go ściągnąć oraz umieścić w katalogu o nazwie pirackiRejs.
+Aby rozpocząć pracę z projektem należy go ściągnąć oraz umieścić w katalogu o nazwie simple-converter.
 
 Nastęnie, w tym katalogu uruchomić terminal oraz  uruchomić: 
 # npm install
@@ -45,7 +45,7 @@ Po zakończeniu działania w terminalu uruchomić:
 Otworzyć drugi raz terminal oraz uruchomić: 
 # node_modules/.bin/webpack 
 
-Pamiętaj, że uruchomienie termianla z gulp watch oraz node_modules/.bin/webpack powinno być w katalogu z projektem. W tym przypadku w katalogu pirackiRejs.
+Pamiętaj, że uruchomienie termianla z gulp watch oraz node_modules/.bin/webpack powinno być w katalogu z projektem. W tym przypadku w katalogu simple-converter.
 
 Teraz wystarczy otworzyć odpowiedni program umożliwiający pisanie kodu oraz rozpocząć pracę.
 
